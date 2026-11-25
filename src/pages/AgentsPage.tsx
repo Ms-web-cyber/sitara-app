@@ -133,9 +133,7 @@ export default function AgentsPage() {
 
         {tab === "dashboard" && (
           <div className="flex flex-col gap-4">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5">
-              
-              [
+              {[
                 { label: "Agents", value: AGENT_REGISTRY.length, icon: Bot, color: "text-cyan-300" },
                 { label: "Ready", value: readyCount, icon: CheckCircle2, color: "text-emerald-300" },
                 { label: "Tools", value: TOOL_PALETTE.length, icon: Wrench, color: "text-amber-300" },
@@ -158,9 +156,7 @@ export default function AgentsPage() {
                     </div>
                   </div>
                 );
-              })
-            </div>
-
+              })}
             <div className="flex items-center justify-between gap-2">
               <h2 className="text-[11px] font-mono uppercase tracking-[0.18em] text-slate-400">
                 Active swarm registry
@@ -178,11 +174,11 @@ export default function AgentsPage() {
                     className="group text-left rounded-2xl border border-white/[0.07] bg-white/[0.02] hover:bg-white/[0.045] hover:border-white/[0.12] p-4 transition cursor-pointer"
                   >
                     <div className="flex items-start justify-between gap-2">
-                      <div className={`p-2 rounded-xl border ${agent.color}`}>
+                      <div className="p-2 rounded-xl border">
                         <Icon size={15} />
                       </div>
                       <span className="flex items-center gap-1.5 text-[8px] font-mono uppercase tracking-wider text-slate-500">
-                        <span className={`w-1.5 h-1.5 rounded-full ${STATUS_DOT[agent.status]}`} />
+                        <span className="w-1.5 h-1.5 rounded-full" />
                         {STATUS_LABEL[agent.status]}
                       </span>
                     </div>
@@ -347,9 +343,8 @@ export default function AgentsPage() {
                     className={`flex-1 flex items-center justify-center gap-1.5 py-2.5 rounded-xl border text-[10px] font-mono uppercase tracking-wider transition ${
                       task.trim()
                         ? "bg-cyan-500/15 border-cyan-500/30 text-cyan-200 hover:bg-cyan-500/25 cursor-pointer"
-                        : "bg-white/[0.02] border-white/[0.06] text-slate-600 cursor-not-allowed"`
-                    }`}
-                  >
+                        : "bg-white/[0.02] border-white/[0.06] text-slate-600 cursor-not-allowed"}
+`}>
                     <Send size={12} /> Send to chat
                   </button>
                   <button
@@ -437,7 +432,7 @@ export default function AgentsPage() {
                       key={agent.id}
                       className="rounded-xl border border-white/[0.06] bg-white/[0.02] p-3 flex items-center gap-3"
                     >
-                      <div className={`p-2 rounded-lg border ${agent.color}`}>
+                      <div className="p-2 rounded-lg border">
                         <Icon size={13} />
                       </div>
                       <div className="min-w-0 flex-1">
