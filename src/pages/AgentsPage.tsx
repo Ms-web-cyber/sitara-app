@@ -405,50 +405,7 @@ export default function AgentsPage() {
             </div>
           )}
 
-          {tab === "runs" && (
-            <div className="flex flex-col gap-3">
-              <div className="rounded-2xl border border-white/[0.07] bg-white/[0.02] p-8 flex flex-col items-center text-center">
-                <div className="w-12 h-12 rounded-2xl border border-dashed border-white/10 bg-white/[0.02] flex items-center justify-center mb-3">
-                  <History size={18} className="text-slate-500" />
-                </div>
-                <h2 className="text-sm font-semibold text-slate-200">No agent runs yet</h2>
-                <p className="text-[11px] text-slate-500 mt-1.5 max-w-sm leading-relaxed">
-                  Completed runs will appear here with the agent, task, tool timeline and output. Persisted history is part of checkpoint 2.
-                </p>
-                <button
-                  onClick={() => setTab("console")}
-                  className="mt-4 flex items-center gap-1.5 px-3 py-2 rounded-xl border border-cyan-500/30 bg-cyan-500/10 text-[10px] font-mono uppercase tracking-wider text-cyan-200 hover:bg-cyan-500/20 transition cursor-pointer"
-                >
-                  Open console
-                  <ArrowRight size={12} />
-                </button>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-                {AGENT_REGISTRY.slice(0, 4).map((agent) => {
-                  const Icon = agent.icon;
-                  return (
-                    <div
-                      key={agent.id}
-                      className="rounded-xl border border-white/[0.06] bg-white/[0.02] p-3 flex items-center gap-3"
-                    >
-                      <div className="p-2 rounded-lg border">
-                        <Icon size={13} />
-                      </div>
-                      <div className="min-w-0 flex-1">
-                        <div className="text-[11px] font-semibold text-slate-200">{agent.name}</div>
-                        <div className="text-[9px] font-mono text-slate-500 truncate">
-                          last run · never
-                        </div>
-                      </div>
-                      <Circle size={8} className="text-slate-700" />
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          )}
-        </div>
+                  </div>
       </div>
     </div>
   );
