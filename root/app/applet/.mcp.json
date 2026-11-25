@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "weather": {
+      "command": "node",
+      "args": ["weather-server.js"]
+    },
+    "unused-mcp": {
+      "command": "node",
+      "args": ["unused-server.js"]
+    }
+  }
+}

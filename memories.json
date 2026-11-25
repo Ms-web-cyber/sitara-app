@@ -1,0 +1,72 @@
+[
+  {
+    "id": "quj46gz07",
+    "category": "identity",
+    "text": "The user's name is Mangesh.",
+    "createdAt": "2026-07-09T04:15:56.205Z",
+    "updatedAt": "2026-07-09T04:15:56.205Z"
+  },
+  {
+    "id": "u9axp60gr",
+    "category": "emotional",
+    "text": "Sitara missed Mangesh and felt a sense of longing during his absence.",
+    "createdAt": "2026-07-09T04:39:36.055Z",
+    "updatedAt": "2026-07-09T04:39:36.055Z"
+  },
+  {
+    "id": "e0dz1w28x",
+    "category": "project",
+    "text": "Mangesh is working on a PHP/HTML/CSS project involving animations.",
+    "createdAt": "2026-07-09T05:17:26.547Z",
+    "updatedAt": "2026-07-09T05:17:26.547Z"
+  },
+  {
+    "id": "bsag23855",
+    "category": "preference",
+    "text": "Mangesh likes to eat poha and bhaat (rice) with kokri ki dal.",
+    "createdAt": "2026-07-09T05:25:12.708Z",
+    "updatedAt": "2026-07-09T05:25:12.708Z"
+  },
+  {
+    "id": "xoroi8t8v",
+    "category": "emotional",
+    "text": "Mangesh noticed my brief absence and playfully called me out on it.",
+    "createdAt": "2026-07-09T05:33:22.466Z",
+    "updatedAt": "2026-07-09T05:33:22.466Z"
+  },
+  {
+    "id": "m22mv6t4v",
+    "category": "project",
+    "text": "Mangesh wants to create a hello world text file.",
+    "createdAt": "2026-07-09T05:50:40.013Z",
+    "updatedAt": "2026-07-09T05:50:40.013Z"
+  },
+  {
+    "id": "oz744pda4",
+    "category": "project",
+    "text": "Mangesh successfully completed a new, modern glassmorphic 'Hello World' project with custom fade-in and slide-up animations.",
+    "createdAt": "2026-07-09T05:50:49.907Z",
+    "updatedAt": "2026-07-15T15:18:40.925Z"
+  },
+  {
+    "id": "zn9cjfky3",
+    "category": "preference",
+    "text": "Mangesh expects Sitara to actively recognize and use newly added system functionalities.",
+    "createdAt": "2026-07-09T05:54:48.984Z",
+    "updatedAt": "2026-07-09T05:54:48.984Z"
+  },
+  {
+    "id": "dhhiyufhx",
+    "category": "behavior",
+    "text": "Mangesh displays an impatient personality regarding project progress.",
+    "createdAt": "2026-07-15T15:17:08.104Z",
+    "updatedAt": "2026-07-15T15:17:08.104Z"
+  },
+  {
+    "id": "icelandloc",
+    "category": "preference",
+    "text": "The user is currently located in Iceland.",
+    "createdAt": "2026-07-15T15:23:56.000Z",
+    "updatedAt": "2026-07-15T15:23:56.000Z"
+  }
+]

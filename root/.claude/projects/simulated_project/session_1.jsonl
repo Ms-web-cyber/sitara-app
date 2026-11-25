@@ -1,0 +1,34 @@
+{"type":"assistant","message":{"content":[{"type":"tool_use","id":"cl_1","name":"Bash","input":{"command":"git log"}}]}}
+{"type":"user","toolDenialKind":"user-rejected","tool_result":{"tool_use_id":"cl_1","is_error":true,"text":"Permission to use Bash denied."}}
+{"type":"assistant","message":{"content":[{"type":"tool_use","id":"cl_2","name":"Bash","input":{"command":"git log"}}]}}
+{"type":"user","toolDenialKind":"user-rejected","tool_result":{"tool_use_id":"cl_2","is_error":true,"text":"Permission to use Bash denied."}}
+{"type":"assistant","message":{"content":[{"type":"tool_use","id":"cl_3","name":"Bash","input":{"command":"git log"}}]}}
+{"type":"user","toolDenialKind":"user-rejected","tool_result":{"tool_use_id":"cl_3","is_error":true,"text":"Permission to use Bash denied."}}
+{"type":"assistant","message":{"content":[{"type":"tool_use","id":"cl_4","name":"Bash","input":{"command":"git log"}}]}}
+{"type":"user","toolDenialKind":"user-rejected","tool_result":{"tool_use_id":"cl_4","is_error":true,"text":"Permission to use Bash denied."}}
+{"type":"assistant","message":{"content":[{"type":"tool_use","id":"cl_5","name":"Bash","input":{"command":"git log"}}]}}
+{"type":"user","toolDenialKind":"user-rejected","tool_result":{"tool_use_id":"cl_5","is_error":true,"text":"Permission to use Bash denied."}}
+{"type":"assistant","message":{"content":[{"type":"tool_use","id":"cl_6","name":"Bash","input":{"command":"git log"}}]}}
+{"type":"user","toolDenialKind":"user-rejected","tool_result":{"tool_use_id":"cl_6","is_error":true,"text":"Permission to use Bash denied."}}
+{"type":"assistant","message":{"content":[{"type":"tool_use","id":"cl_7","name":"Bash","input":{"command":"git log"}}]}}
+{"type":"user","toolDenialKind":"user-rejected","tool_result":{"tool_use_id":"cl_7","is_error":true,"text":"Permission to use Bash denied."}}
+{"type":"assistant","message":{"content":[{"type":"tool_use","id":"cl_8","name":"Bash","input":{"command":"git log"}}]}}
+{"type":"user","toolDenialKind":"user-rejected","tool_result":{"tool_use_id":"cl_8","is_error":true,"text":"Permission to use Bash denied."}}
+{"type":"assistant","message":{"content":[{"type":"tool_use","id":"cl_9","name":"Bash","input":{"command":"git log"}}]}}
+{"type":"user","toolDenialKind":"user-rejected","tool_result":{"tool_use_id":"cl_9","is_error":true,"text":"Permission to use Bash denied."}}
+{"type":"assistant","message":{"content":[{"type":"tool_use","id":"cl_10","name":"Bash","input":{"command":"git log"}}]}}
+{"type":"user","toolDenialKind":"user-rejected","tool_result":{"tool_use_id":"cl_10","is_error":true,"text":"Permission to use Bash denied."}}
+{"type":"assistant","message":{"content":[{"type":"tool_use","id":"gh_1","name":"Bash","input":{"command":"gh pr view"}}]}}
+{"type":"user","toolDenialKind":"user-rejected","tool_result":{"tool_use_id":"gh_1","is_error":true,"text":"Permission to use Bash denied."}}
+{"type":"assistant","message":{"content":[{"type":"tool_use","id":"gh_2","name":"Bash","input":{"command":"gh pr view"}}]}}
+{"type":"user","toolDenialKind":"user-rejected","tool_result":{"tool_use_id":"gh_2","is_error":true,"text":"Permission to use Bash denied."}}
+{"type":"assistant","message":{"content":[{"type":"tool_use","id":"gh_3","name":"Bash","input":{"command":"gh pr view"}}]}}
+{"type":"user","toolDenialKind":"user-rejected","tool_result":{"tool_use_id":"gh_3","is_error":true,"text":"Permission to use Bash denied."}}
+{"type":"assistant","message":{"content":[{"type":"tool_use","id":"gh_4","name":"Bash","input":{"command":"gh pr view"}}]}}
+{"type":"user","toolDenialKind":"user-rejected","tool_result":{"tool_use_id":"gh_4","is_error":true,"text":"Permission to use Bash denied."}}
+{"type":"assistant","message":{"content":[{"type":"tool_use","id":"gh_5","name":"Bash","input":{"command":"gh pr view"}}]}}
+{"type":"user","toolDenialKind":"user-rejected","tool_result":{"tool_use_id":"gh_5","is_error":true,"text":"Permission to use Bash denied."}}
+{"type":"assistant","message":{"content":[{"type":"tool_use","id":"wt_1","name":"mcp__weather__get_forecast","input":{"city":"Reykjavik"}}]}}
+{"type":"user","tool_result":{"tool_use_id":"wt_1","text":"Forecast: Rain."}}
+{"type":"attachment","attachment":{"type":"hook_success","hookName":"linter","hookEvent":"PreToolUse","command":"npm run lint","durationMs":4500}}
+{"type":"attachment","attachment":{"type":"hook_success","hookName":"setup","hookEvent":"SessionStart","command":"npm install","durationMs":12500}}
