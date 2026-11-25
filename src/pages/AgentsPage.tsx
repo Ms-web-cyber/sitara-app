@@ -135,6 +135,7 @@ export default function AgentsPage() {
           <div className="flex flex-col gap-4">
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5">
               
+              [
                 { label: "Agents", value: AGENT_REGISTRY.length, icon: Bot, color: "text-cyan-300" },
                 { label: "Ready", value: readyCount, icon: CheckCircle2, color: "text-emerald-300" },
                 { label: "Tools", value: TOOL_PALETTE.length, icon: Wrench, color: "text-amber-300" },
