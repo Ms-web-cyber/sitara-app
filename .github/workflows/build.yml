@@ -8,8 +8,9 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  build-web:
     runs-on: ubuntu-latest
+    name: Build Web App
     
     steps:
     - name: Checkout code
@@ -30,11 +31,67 @@ jobs:
     - name: Build app
       run: npm run build
     
-    - name: Upload build artifacts
+    - name: Upload web build artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: sitara-build
+        name: sitara-web-build
         path: |
           dist/
           server.ts
+        retention-days: 30
+
+  build-apk:
+    runs-on: ubuntu-latest
+    name: Build Android APK
+    
+    needs: build-web
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+    
+    - name: Install dependencies
+      run: npm ci
+    
+    - name: Build app
+      run: npm run build
+    
+    - name: Setup Java
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: '17'
+    
+    - name: Setup Android SDK
+      uses: android-actions/setup-android@v3
+    
+    - name: Install Capacitor
+      run: |
+        npm install @capacitor/core @capacitor/cli @capacitor/android
+    
+    - name: Initialize Capacitor
+      run: |
+        npx cap init Sitara com.sitara.app --web-dir dist
+        npx cap add android
+    
+    - name: Sync Capacitor
+      run: npx cap sync android
+    
+    - name: Build APK
+      run: |
+        cd android
+        chmod +x gradlew
+        ./gradlew assembleDebug
+    
+    - name: Upload APK
+      uses: actions/upload-artifact@v4
+      with:
+        name: sitara-apk
+        path: android/app/build/outputs/apk/debug/app-debug.apk
         retention-days: 30
